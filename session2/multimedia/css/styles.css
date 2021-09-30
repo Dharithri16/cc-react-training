@@ -111,8 +111,31 @@ body {
         color: white;
         margin-left: 10px;
       }
-      
+      #tube{
+        width ="620"
+        height="545"
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      #google
+      {
+        margin-left: 350px;
+        margin-top: 70px;
+        border-radius: 10%;
+        padding-bottom: 15px;
+        border: solid black;
+        background-color: rgb(150, 130, 130);  
+      }
+      #vi{
+        margin-left: 70px;
+        margin-top: 50px;
+        padding: 15px;
+        width: 800px;
+        height: 300px;
+      }
      
-            
+      
       
       
