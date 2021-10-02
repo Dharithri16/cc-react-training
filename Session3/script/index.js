@@ -9,13 +9,15 @@ function calculate(event) {
   const clickedButtonValue = event.target.value;
 
   if (clickedButtonValue === '=') {
-    
-    if (display.value !== '') {
+     if (display.value !== '') {
       display.value = eval(display.value);
     }
   } else if (clickedButtonValue === 'C') {
     display.value = '';
-  } else {
+  } else if (clickedButtonValue ===  'Del'){
+     display.value = display.value.slice(0, -1)
+  }
+  else {
     display.value += clickedButtonValue;
   }
 }
