@@ -5,3 +5,6 @@ let x = user.person.employee.firstname +" "+ user.person.likes[1]
 
 console.log(x)
 
+
+
+

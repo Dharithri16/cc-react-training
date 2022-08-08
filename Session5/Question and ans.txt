@@ -1,0 +1,76 @@
+0: Is JavaScript single threaded or multithreaded? What does it mean to be any?
+Ans: Javascript is a single threaded which means only one statement is executed at a time
+
+1: What are promises? Why are they used?
+Ans:  Promises are a proxy for a value that will eventually become available. They are used to handle the asynchronous operations in JavaScript.
+
+2: What do async/await do? Explain it in your own words.
+Ans: async/await are just the extension of promise.
+     Async functions always returns a value where as await functions will wait for the promise.
+     Await function works only inside the async function.
+
+3: How do we catch errors in async functions?
+Ans: by using catch() handler.
+
+
+4: What do async functions return?
+Ans: async function always return a promise.   
+
+5: What do then() consumers in promises return?
+      then() also returns a promise.
+
+6: Write the explicit equivalent of Promise.resolve(100);
+
+7: What are the states a promise can be in?
+Ans: The states a promise can have are:
+     1)pending
+     2)fulfilled
+     3)rejected	
+
+
+8: What happens if neither resolve nor reject is called within a promise?
+   It will remain in the pending state.
+
+9: What happens if multiple resolve or reject is called within a promise?
+
+10: What does the finally() method on promise do? Provide your explanation.
+
+11: What are microtasks in JS?
+
+12: Write a simple print() function that accepts a callback, which gets called after 3 seconds. The callback function could be anything that prints out on the screen.
+
+13: Delay with a promise
+
+
+We know that setTimeout() uses a callback.
+Create a promise based alternative.
+
+The function named delay(ms) should return a promise.
+
+We should be able to achieve something like this:
+
+delay(3000).then(() => alert('Should alert after 3 seconds'))
+
+
+14: Consume the following promise using `await`.
+
+let promise = new Promise((res,rej) => {
+    setTimeout(() => res("Resolved!"),3000)
+} );
+
+promise.then((res) => alert("Response value is: " + res)); // this line needs to get replaced.
+
+
+15: What is the difference between the following two lines of code:
+
+promise.then(f1).catch(f2);
+
+and
+
+promise.then(f1, f2);
+
+Provide an explanation for your answer.
+
+
+
+
